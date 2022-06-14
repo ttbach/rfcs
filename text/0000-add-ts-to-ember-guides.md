@@ -75,8 +75,22 @@ users?
 Adding Typescript documentation means added maintenance effort on:
 - Keeping documentation up to date for both JS and TS
 - Potential learning curve for people who want to make changes to TS examples.
-This might be a small risk bc in the past 2 years, there are X commits to modify
-examples (TODO: do research)
+
+This might be a small risk. In the past year, there have been 11 commits that modify
+code samples.
+
+Commit list:
+5/25/22 https://github.com/ember-learn/guides-source/pull/1708 - tutorial update
+4/8/22 https://github.com/ember-learn/guides-source/pull/1821 - fix ember data call code sample
+12/6/21 https://github.com/ember-learn/guides-source/pull/1758 - fix looping example
+12/4/21 https://github.com/ember-learn/guides-source/pull/1751 - fix backing class
+11/5/21 https://github.com/ember-learn/guides-source/pull/1747 - make code more accessible
+11/4/21 https://github.com/ember-learn/guides-source/pull/1734 - remove willTransition references
+9/1/21 https://github.com/ember-learn/guides-source/pull/1729 - remove @id from built in Ember components
+8/31/21 https://github.com/ember-learn/guides-source/pull/1725 - add class based examples
+8/31/21 https://github.com/ember-learn/guides-source/pull/1724 - update class based examples
+8/31/21 https://github.com/ember-learn/guides-source/pull/1715 - injection in native classes
+7/21/21 https://github.com/ember-learn/guides-source/pull/1705 - fix glimmer code
 
 ## Alternatives
 
