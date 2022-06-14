@@ -20,20 +20,16 @@ Relevant Team(s): Fill this in with the [team(s)](README.md#relevant-teams) to w
 RFC PR: Fill this in with the URL for the Proposal RFC PR
 -->
 
-# <RFC title>
+# Add Typescript to Ember Guides
 
 ## Summary
 
-Now that Typescript is a supported as a language in Ember, we need to figure
-out a way to surface documentation for adoption and usage.
+Now that Typescript is a supported language in Ember, we need to figure out a way to surface documentation for adoption and usage.
 
 ## Motivation
 
-> Why are we doing this? What use cases does it support? What is the expected
-outcome?
-We need to add documentation in the following forms:
-1. Merging [TS guides](https://docs.ember-cli-typescript.com/) into Ember guides
-2. Adding TS
+Currently, the only documentation we have for Typescript in Ember exists in a [separate site](https://docs.ember-cli-typescript.com/). This is not ideal because
+it's hard to find the TS doc because it's not linked anywhere and also not ideal to have separate sites for Ember resources.
 
 ## Detailed design
 
@@ -45,13 +41,15 @@ implementation to implement. This should get into specifics and corner-cases,
 and include examples of how the feature is used. Any new terminology should be
 defined here.
 
+At a high level, we need to incorporate information from https://docs.ember-cli-typescript.com/ in the Ember guides.
+
 Outline:
 1. List out all sections on the TS docs that can be incorporated into Ember guides.
 Pick the hardest section and then include an example of what that page could look
 like.
 2. Include code samples of a toggle component that can switch between JS and TS,
 where the JS part is compiled from TS. Once selected, all examples will be in that
-language (default to JS).
+language (default to JS). Example: https://firebase.google.com/docs/firestore/manage-data/add-data
 3. List out the explanatory texts that can be incorporated into Ember guides
 
 Examples can be toggled between TS and JS, with JS being compiled from TS, so
@@ -80,17 +78,17 @@ This might be a small risk. In the past year, there have been 11 commits that mo
 code samples.
 
 Commit list:
-5/25/22 https://github.com/ember-learn/guides-source/pull/1708 - tutorial update
-4/8/22 https://github.com/ember-learn/guides-source/pull/1821 - fix ember data call code sample
-12/6/21 https://github.com/ember-learn/guides-source/pull/1758 - fix looping example
-12/4/21 https://github.com/ember-learn/guides-source/pull/1751 - fix backing class
-11/5/21 https://github.com/ember-learn/guides-source/pull/1747 - make code more accessible
-11/4/21 https://github.com/ember-learn/guides-source/pull/1734 - remove willTransition references
-9/1/21 https://github.com/ember-learn/guides-source/pull/1729 - remove @id from built in Ember components
-8/31/21 https://github.com/ember-learn/guides-source/pull/1725 - add class based examples
-8/31/21 https://github.com/ember-learn/guides-source/pull/1724 - update class based examples
-8/31/21 https://github.com/ember-learn/guides-source/pull/1715 - injection in native classes
-7/21/21 https://github.com/ember-learn/guides-source/pull/1705 - fix glimmer code
+1. 5/25/22 https://github.com/ember-learn/guides-source/pull/1708 - tutorial update
+2. 4/8/22 https://github.com/ember-learn/guides-source/pull/1821 - fix ember data call code sample
+3. 12/6/21 https://github.com/ember-learn/guides-source/pull/1758 - fix looping example
+4. 12/4/21 https://github.com/ember-learn/guides-source/pull/1751 - fix backing class
+5. 11/5/21 https://github.com/ember-learn/guides-source/pull/1747 - make code more accessible
+6. 11/4/21 https://github.com/ember-learn/guides-source/pull/1734 - remove willTransition references
+7. 9/1/21 https://github.com/ember-learn/guides-source/pull/1729 - remove @id from built in Ember components
+8. 8/31/21 https://github.com/ember-learn/guides-source/pull/1725 - add class based examples
+9. 8/31/21 https://github.com/ember-learn/guides-source/pull/1724 - update class based examples
+10. 8/31/21 https://github.com/ember-learn/guides-source/pull/1715 - injection in native classes
+11. 7/21/21 https://github.com/ember-learn/guides-source/pull/1705 - fix glimmer code
 
 ## Alternatives
 
