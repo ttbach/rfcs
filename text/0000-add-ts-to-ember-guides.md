@@ -33,40 +33,26 @@ it's hard to find the TS doc because it's not linked anywhere and also not ideal
 
 ## Detailed design
 
-> This is the bulk of the RFC.
-
 > Explain the design in enough detail for somebody
 familiar with the framework to understand, and for somebody familiar with the
 implementation to implement. This should get into specifics and corner-cases,
 and include examples of how the feature is used. Any new terminology should be
 defined here.
 
-At a high level, we need to incorporate information from https://docs.ember-cli-typescript.com/ in the Ember guides.
+At a high level, we need to incorporate explanatory information from https://docs.ember-cli-typescript.com/ in the Ember guides.
 
 Outline:
-1. List out all sections on the TS docs that can be incorporated into Ember guides.
-Pick the hardest section and then include an example of what that page could look
-like.
-2. Include code samples of a toggle component that can switch between JS and TS,
-where the JS part is compiled from TS. Once selected, all examples will be in that
-language (default to JS). Example: https://firebase.google.com/docs/firestore/manage-data/add-data
+1. Draw out proposal for what [the component state and actions page](https://guides.emberjs.com/release/components/component-state-and-actions/) would look like with the changes
+2. Include code samples of a toggle component that can switch between JS and TS, where the JS part is compiled from TS. Once selected, all examples will be in that
+language (default to JS). Example: https://firebase.google.com/docs/firestore/manage-data/add-data. Alternatively, if we want a less pronounced experience, we
+can add a TS checkbox instead of a TS tab.
 3. List out the explanatory texts that can be incorporated into Ember guides
-
-Examples can be toggled between TS and JS, with JS being compiled from TS, so
+4. Examples can be toggled between TS and JS, with JS being compiled from TS, so
 it reduces maintenance cost.
 
 ## How we teach this
 
-> What names and terminology work best for these concepts and why? How is this
-idea best presented? As a continuation of existing Ember patterns, or as a
-wholly new one?
-
-> Would the acceptance of this proposal mean the Ember guides must be
-re-organized or altered? Does it change how Ember is taught to new users
-at any level?
-
-> How should this feature be introduced and taught to existing Ember
-users?
+Not sure if this section is necessary
 
 ## Drawbacks
 
@@ -74,7 +60,7 @@ Adding Typescript documentation means added maintenance effort on:
 - Keeping documentation up to date for both JS and TS
 - Potential learning curve for people who want to make changes to TS examples.
 
-This might be a small risk. In the past year, there have been 11 commits that modify
+In the past year, there have been 11 commits that modify
 code samples.
 
 Commit list:
