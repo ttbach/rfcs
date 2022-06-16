@@ -29,7 +29,8 @@ Now that Typescript is a supported language in Ember, we need to figure out a wa
 ## Motivation
 
 Currently, the only documentation we have for Typescript in Ember exists in a [separate site](https://docs.ember-cli-typescript.com/). This is not ideal because
-it's hard to find the TS doc because it's not linked anywhere and also not ideal to have separate sites for Ember resources.
+it's hard to find the TS doc because it's not linked anywhere and also not ideal to have separate sites for Ember resources. Additionally, documentation changes
+were already planned as part of the (0724-road-to-typescript RFC)[https://emberjs.github.io/rfcs/0724-road-to-typescript.html#official-documentation].
 
 ## Detailed design
 
